@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Population Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>State Population Dashboard</h1>
+    <h2>Enter the name of state to filter its population data</h2>
+    <div class="input-container">
+        <input type="text" id="userInput" placeholder=" Please enter state name to be searched.....">
+        <button id="btn">Search</button>
+    </div>
+    <div id="loading" class="hidden">
+        <div class="spinner"></div>
+        Loading...
+    </div>
+    <div id="error" class="hidden"></div>
+
+    <table id="table" class="hidden">
+        <thead>
+            <tr>
+                <th>State</th>
+                <th>Year</th>
+                <th>Population</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!--Retriving data from the api and inserting into created table-->
+        </tbody>
+    </table>
+
+    <!----Retriving data from js file-->
+    <script src="data.js"></script>
+</body>
+</html>
